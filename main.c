@@ -4,7 +4,7 @@ struct estructura_persona {
 	char nombre[100];
 	char direccion[100];
 	char religion[50];
-	char sexo;
+	char sexo [10];
 	int edad;
 	int id;
 	char escolaridad [100];
