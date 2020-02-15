@@ -43,4 +43,5 @@ main()
     printf("La edad de la persona es: %d\n\n",persona.edad);
     printf("La id de la persona es: %d\n\n",persona.id);
 
+
 	}
