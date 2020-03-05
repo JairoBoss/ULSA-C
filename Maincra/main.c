@@ -1,37 +1,34 @@
-#include <stdio.h>
+#include <stdlib.h>
+#define SIZE 1000
 
+int main(){
 
-int main() {
-  int aguante, num_filas, diamantes[1000], acumulado=0;
-  int suma1[600];
-  scanf("%d",&num_filas );
-  printf("Ingrese los diamantes en cada fila");
-  for (int i = 0; i < num_filas; i++)
-  {
-    scanf("%d",&diamantes[i] );
-  }
-  printf("Ingrese el aguante del pico");
-  scanf("%d",&aguante );
+    long long int n, k;
+    long long int suma1 = 0, suma2 = 0;
+    long long int diamantes[SIZE];
 
-  for (size_t i = 0; i < 600; i++)
-  {
-    suma1[i]=0;
-  }
-  for (size_t i = 0; i < num_filas; i++)
-  {
-    for (int j = 0; j < aguante; j++)
-    {
-      suma1[i]=suma1[i]+diamantes[j+i];
+    scanf("%lld", &n);
+
+    for(long long int i = 0; i < n; i++){
+        scanf("%lld", &diamantes[i]);
+    }
+    scanf("%lld", &k);
+
+    for(long long int i = 0; i < n; i++){
+        if((n - i) < k) continue;
+        for(long long int  j = 0; j < k; j++){
+            suma1 += diamantes[i + j];
+        }
+        if(suma1 >= suma2){
+            suma2 = suma1;
+            suma1 = 0;
+        }
+        else{
+            suma1 = 0;
+        }
     }
 
-  }
-  for (size_t i = 0; i < 600; i++)
-  {
-      if (suma1[i]>suma1[i+1]&&acumulado<suma1[i+1]) {
-        acumulado=suma1[i];
-      }
-  }
+    printf("%lld", suma2);
 
-
-  printf("\n\n%d\n\n",acumulado );
+return 0;
 }
