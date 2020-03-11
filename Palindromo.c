@@ -1,4 +1,3 @@
-//Falta correcion del bucle
 #include <stdio.h>
 #define max 30
 void palin()
