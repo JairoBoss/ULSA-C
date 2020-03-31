@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 int main(){
   int dia,mes;
   printf("============================================================\n");
@@ -154,21 +154,21 @@ printf("\t\t");
         break;
         case 9:
             if (dia>=20)
-            printf("Tu estacion es otoño");
+            printf("Tu estacion es otoÃ±o");
             else
             printf("Tu estacion es verano");
         break;
         case 10:
-            printf("Tu estacion es otoño");
+            printf("Tu estacion es otoÃ±o");
         break;
         case 11:
-            printf("Tu estacion es otoño");
+            printf("Tu estacion es otoÃ±o");
         break;
         case 12:
             if (dia>=21)
             printf("Tu estacion es invierno");
             else
-            printf("Tu estacion es otoño");
+            printf("Tu estacion es otoÃ±o");
         break;
     }
     }
