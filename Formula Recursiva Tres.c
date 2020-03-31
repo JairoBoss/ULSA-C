@@ -1,26 +1,28 @@
 #include <stdio.h>
 
-int formula(int n)
-{
+int recursiva3(int n){
     int operacion;
-    if (n<6)
-    return 1;
+    if (n<=5)
+      return 1;
     else
     {
-        operacion= formula(n-2)*5;
-        printf("\n%d\n",operacion);
+       operacion=recursiva3(n-2)*5; //aquí se hace el factorial siguiendo la fórmula
+
     }
-    return;
+    printf("\n%d\n",operacion);//aqui imprime los valores
+       return operacion;//imprime el ultimo valor
+
 }
 
 
 
 int main() {
-  int num;
+  int valor;//valor a ingresar
 
-  printf("\t\tIntroduzca el numero:   \n" );
-  scanf("%d",&num );
-  printf("\n%d\n",formula(num));
+  printf("Introduzca el numero que desea hacer factorial\n" );
+  scanf("%d",&valor );//se escanea el valor
+  printf("\n1\n");
+  printf("\n%d\n",recursiva3(valor) );//imprimimos todos los valores
 
   return 0;
 }
