@@ -1,9 +1,9 @@
 #include <stdio.h>
-#define max 30
+#define max 30 //valor maximo de nuestra palabra
 void palin()
 {
  int inicio,fin;
-    char palabra[max], caracater;
+    char palabra[max], caracater;//aqui caracter me refiero a la palabra, para ver si es o n o es palindroma
     int i;
 
 
