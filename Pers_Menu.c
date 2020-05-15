@@ -126,7 +126,7 @@ int main() {
 					 printf("\t\t\t" );
 					 printf("Tu lista esta vacia, vamos a rellenarla =)\n");
 						do{
-														for(int i = 0; i < 2; i++)
+														for(int i = 0; i < 10; i++)
 														{
 																		numewro=1;
 																		array_de_personas[i].id_persona = i+1;
@@ -165,7 +165,7 @@ int main() {
 														}
 														printf("\t\t\t" );
 														printf("Tus personas ya han sido agregadas =)\n" );
-									}while(numewro==3);
+									}while(numewro==11);
 				}
 				else{
 						printf("Cual es el ID de la persona a modificar?");
